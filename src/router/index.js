@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 // 导入页面组件
 import Home from '../views/Home.vue'
@@ -33,7 +33,7 @@ const routes = [
 
 // 创建路由实例
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 
