@@ -10,8 +10,8 @@
       <el-breadcrumb-item>{{ article?.title }}</el-breadcrumb-item>
     </el-breadcrumb>
 
-    <el-layout class="article-layout" v-if="article">
-      <el-layout>
+    <el-container class="article-layout" v-if="article">
+      <el-container>
         <el-main class="article-content">
           <h1 class="article-detail-title">{{ article.title }}</h1>
           <div class="article-detail-meta">
@@ -47,13 +47,15 @@
                 :key="item.id"
                 class="related-article-item"
               >
-                <router-link :to="'/article/' + item.id">{{ item.title }}</router-link>
+                <router-link :to="'/article/' + item.id">{{
+                  item.title
+                }}</router-link>
               </div>
             </div>
           </el-card>
         </el-aside>
-      </el-layout>
-    </el-layout>
+      </el-container>
+    </el-container>
   </div>
 </template>
 
@@ -70,7 +72,10 @@ onMounted(() => {
   const articleId = route.params.id
   article.value = getArticleById(articleId)
   if (article.value) {
-    relatedArticles.value = getRelatedArticles(articleId, article.value.category)
+    relatedArticles.value = getRelatedArticles(
+      articleId,
+      article.value.category
+    )
   }
 })
 </script>
