@@ -4,11 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "preinstall": "npm i -g npm@9.8.1",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "postinstall": "npm rebuild vite"
+    "preview": "vite preview"
   },
   "dependencies": {
     "element-plus": "^2.5.0",
@@ -17,10 +15,10 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.4",
-    "vite": "^6.4.1"
+    "vite": "^5.4.10"
   },
   "engines": {
-    "node": "22.12.0",
-    "npm": ">=9.0.0"
+    "node": "20.18.0",
+    "npm": ">=9.8.1"
   }
 }
