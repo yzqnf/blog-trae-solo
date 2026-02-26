@@ -33,9 +33,9 @@
             </div>
             <div class="article-excerpt">{{ article.excerpt }}</div>
             <router-link :to="'/article/' + article.id">
-              <el-button type="primary" size="small" class="read-more"
-                >阅读更多</el-button
-              >
+              <el-button type="primary" size="small" class="read-more">
+                阅读更多
+              </el-button>
             </router-link>
           </el-card>
         </el-col>

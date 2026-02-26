@@ -47,9 +47,9 @@
                 :key="item.id"
                 class="related-article-item"
               >
-                <router-link :to="'/article/' + item.id">{{
-                  item.title
-                }}</router-link>
+                <router-link :to="'/article/' + item.id">
+                  {{ item.title }}
+                </router-link>
               </div>
             </div>
           </el-card>

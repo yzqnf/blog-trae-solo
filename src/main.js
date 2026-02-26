@@ -12,14 +12,16 @@ import {
   ElContainer,
   ElMain,
   ElAside,
-  ElAvatar
+  ElAvatar,
+  ElMenu,
+  ElMenuItem,
+  ElIcon
 } from 'element-plus'
 import 'element-plus/dist/index.css'
 import App from './App.vue'
 import router from './router'
 
 const app = createApp(App)
-
 // 按需注册Element Plus组件
 app.use(ElCard)
 app.use(ElRow)
@@ -33,6 +35,9 @@ app.use(ElContainer)
 app.use(ElMain)
 app.use(ElAside)
 app.use(ElAvatar)
+app.use(ElMenu)
+app.use(ElMenuItem)
+app.use(ElIcon)
 
 app.use(router)
 app.mount('#app')
